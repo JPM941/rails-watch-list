@@ -1,0 +1,25 @@
+<div id="lists">
+
+    <div class="main">
+    <h1>All our lists (<%=@lists.size%>)</h1>
+      <div class ="row gy-5">
+        <%@lists.each do |list|%>
+        <div class = "col-md-4">
+          <div id="<%= dom_id list %>">
+            <div class="card">
+              <img src="https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title"><%=list.name%></h5>
+
+              </div>
+              <div class="card-body">
+                <%= link_to "See more", list_path(list) %>
+              </div>
+            </div>
+          </div>
+        </div>
+        <%end%>
+      </div>
+
+
+</div>

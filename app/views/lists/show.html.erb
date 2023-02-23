@@ -1,0 +1,27 @@
+<p style="color: green"><%= notice %></p>
+<div class="list-title">
+  <h1><%=@list.name%></h1>
+</div>
+<div class="btn-add-scss">
+  <%= link_to "New Bookmark", new_list_bookmark_path(@list) %>
+</div>
+<div class = "list-of-card">
+  <div class ="row gy-5">
+          <%@list.bookmarks.each do |bookmark|%>
+          <div class = "col-md-3">
+
+              <div class="card", style="width: 18rem">
+                <img src="<%=bookmark.movie.poster_url%>" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title"><%=bookmark.comment%></h5>
+                  <%= link_to "Delete",
+                    bookmark_path(bookmark),
+                    data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+                  %>
+                </div>
+              </div>
+
+          </div>
+          <%end%>
+  </div>
+</div>
