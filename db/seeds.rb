@@ -10,4 +10,4 @@ Movie.create(title: "The Godfather", overview: "Spanning the years 1945 to 1955,
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
-Movie.create(title: "Spirited Away", overwiew: "A young girl, Chihiro, becomes trapped in a strange new world of spirits. When her parents undergo a mysterious transformation, she must call upon the courage she never knew she had to free her family.", poster_url: "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg", rating: 8.4)
+Movie.create(title: "Spirited Away", overview: "A young girl, Chihiro, becomes trapped in a strange new world of spirits. When her parents undergo a mysterious transformation, she must call upon the courage she never knew she had to free her family.", poster_url: "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/39wmItIWsg5sZMyRUHLkWBcuVCM.jpg", rating: 8.4)
